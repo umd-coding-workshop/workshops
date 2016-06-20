@@ -11,30 +11,42 @@ Ideas for the curriculum, exercises, etc. can be added in this document.
 
 ## Key command-line utilities 
 
+### file-system navigation
 - pwd
 - ls [-la]
 - cd
+
+### help
+- man
+
+### file-system manipulation
 - mkdir
 - rmdir
 - rm
 - mv
 - cp
+
+### file content
 - cat 
 - grep
+- find (with: sort, uniq, xargs)
+- wc
 - less
 - head
 - tail
 - cut
-- man
+- sed/awk
 - vi{,m}
+
+### networking
 - ssh
 - scp
-- find (with: sort, uniq, xargs)
+- 
+### permissions-related
 - chown 
 - chmod
 - su
 - sudo 
-- sed/awk
 
 ## Exercises
 
