@@ -53,6 +53,7 @@ Ideas for the curriculum, exercises, etc. can be added in this document.
 - variables
 - "short-circuit" operators (`&&` and `||`)
 - for/while loops
+- command substitution
 
 ### Scripting
 
@@ -61,7 +62,6 @@ Ideas for the curriculum, exercises, etc. can be added in this document.
 - conditionals
   - if/then
   - `test` operations (`-e`, `-d`, `-z`, `-n`, etc.)
-- command substitution
 
 ## Further Reading
 
