@@ -50,6 +50,7 @@ Ideas for the curriculum, exercises, etc. can be added in this document.
 
 - pipes
 - IO redirection
+- stdin stdout stderr
 - variables
 - "short-circuit" operators (`&&` and `||`)
 - for/while loops
@@ -59,9 +60,12 @@ Ideas for the curriculum, exercises, etc. can be added in this document.
 
 - scripts
   - command-line arguments
+- echo
 - conditionals
   - if/then
   - `test` operations (`-e`, `-d`, `-z`, `-n`, etc.)
+- exit statuses
+- best practices
 
 ## Further Reading
 
