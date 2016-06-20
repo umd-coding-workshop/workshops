@@ -18,11 +18,13 @@ Ideas for the curriculum, exercises, etc. can be added in this document.
 - mv
 - cp
 - cat 
+- grep
+- less
 - man
 - vi{,m}
 - ssh
 - scp
-- find
+- find (with: sort, uniq, xargs)
 - chown 
 - chmod
 - su
@@ -32,7 +34,8 @@ Ideas for the curriculum, exercises, etc. can be added in this document.
 
 - make some files, move them around, delete them
 - how to get information (who/where you are, files and their attributes, env variables, command help) 
-- globbing
+- globbing (and other special shell-isms like `.`, `..`, and `~`)
+- quoting/escaping (single vs. double, interactions with globbing)
 - permissions
 - pipes
 - IO redirection
