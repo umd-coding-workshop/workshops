@@ -38,21 +38,29 @@ Ideas for the curriculum, exercises, etc. can be added in this document.
 
 ## Exercises
 
+### File system
+
 - make some files, move them around, delete them
 - how to get information (who/where you are, files and their attributes, env variables, command help) 
 - globbing (and other special shell-isms like `.`, `..`, and `~`)
 - quoting/escaping (single vs. double, interactions with globbing)
 - permissions
+
+### Running commands
+
 - pipes
 - IO redirection
+- variables
+- "short-circuit" operators (`&&` and `||`)
+- for/while loops
+
+### Scripting
+
 - scripts
   - command-line arguments
-- variables
 - conditionals
   - if/then
   - `test` operations (`-e`, `-d`, `-z`, `-n`, etc.)
-  - "short-circuit" operators (`&&` and `||`)
-- loops (for/while)
 - command substitution
 
 ## Further Reading
