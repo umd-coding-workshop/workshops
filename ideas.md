@@ -29,6 +29,7 @@ Ideas for the curriculum, exercises, etc. can be added in this document.
 - chmod
 - su
 - sudo 
+- sed/awk
 
 ## Exercises
 
@@ -40,7 +41,12 @@ Ideas for the curriculum, exercises, etc. can be added in this document.
 - pipes
 - IO redirection
 - scripts
+  - command-line arguments
 - variables
+- conditionals
+  - if/then
+  - `test` operations (`-e`, `-d`, `-z`, `-n`, etc.)
+  - "short-circuit" operators (`&&` and `||`)
 - loops (for/while)
 - command substitution
 
