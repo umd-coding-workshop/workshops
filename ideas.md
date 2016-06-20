@@ -14,6 +14,8 @@ Ideas for the curriculum, exercises, etc. can be added in this document.
 - pwd
 - ls [-la]
 - cd
+- mkdir
+- rmdir
 - rm
 - mv
 - cp
