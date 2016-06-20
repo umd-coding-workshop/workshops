@@ -41,7 +41,7 @@ Ideas for the curriculum, exercises, etc. can be added in this document.
 ### networking
 - ssh
 - scp
-- 
+
 ### permissions-related
 - chown 
 - chmod
