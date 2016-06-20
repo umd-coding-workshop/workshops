@@ -31,10 +31,15 @@ Ideas for the curriculum, exercises, etc. can be added in this document.
 ## Exercises
 
 - make some files, move them around, delete them
-- how to get information (who/where you are, files and their attributes, env variables, 
+- how to get information (who/where you are, files and their attributes, env variables, command help) 
 - globbing
 - permissions
 - pipes
+- IO redirection
+- scripts
+- variables
+- loops (for/while)
+- command substitution
 
 ## Further Reading
 
