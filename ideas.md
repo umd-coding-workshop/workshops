@@ -20,6 +20,9 @@ Ideas for the curriculum, exercises, etc. can be added in this document.
 - cat 
 - grep
 - less
+- head
+- tail
+- cut
 - man
 - vi{,m}
 - ssh
