@@ -4,6 +4,8 @@ EXERCISE 1:
 
 1)  Navigate to the 'exercise1' directory by using the cd command.
 
+    'cd exerise1'
+
     Use pwd command to make sure you are in the correct directory.
     
 2)  Let's make some files! Make your first file by entering the following command: touch test01.txt
