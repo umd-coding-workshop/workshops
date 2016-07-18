@@ -19,3 +19,10 @@ Use ls command to see the file you've just created.
     'touch test{02..10}.txt'
     
 Again, use the ls command to confirm you've correctly created test01.txt - test10.txt.
+
+4)  Now that we have some files, let's create some additional directories to house them. 
+
+    'mkdir files'
+    'mkdir archive'
+
+Use the ls -l command to view the new directories you've created alongside your files.
