@@ -4,7 +4,7 @@ EXERCISE 1:
 
 1)  Navigate to the 'exercise1' directory by using the cd command.
 
-    'cd exerise1'
+    'cd exercise1'
 
 Use pwd command to make sure you are in the correct directory.
     
