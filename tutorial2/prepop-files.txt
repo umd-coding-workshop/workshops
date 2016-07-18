@@ -1,0 +1,55 @@
+Exercise 1
+  directory
+  directory
+    file <permissions>
+    file <permissions>
+    file
+  directory
+  
+Exercise 2
+  directory
+  directory
+    file <permissions>
+    file <permissions>
+    file
+  directory
+  
+Exercise 3
+  directory
+  directory
+    file <permissions>
+    file <permissions>
+    file
+  directory
+  
+Exercise 4
+  directory
+  directory
+    file <permissions>
+    file <permissions>
+    file
+  directory
+  
+Exercise 5
+  directory
+  directory
+    file <permissions>
+    file <permissions>
+    file
+  directory
+  
+Exercise 6
+  directory
+  directory
+    file <permissions>
+    file <permissions>
+    file
+  directory
+  
+Exercise 7
+  directory
+  directory
+    file <permissions>
+    file <permissions>
+    file
+  directory
