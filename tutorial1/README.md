@@ -14,7 +14,7 @@ Use pwd command to make sure you are in the correct directory.
 
 Use ls command to see the file you've just created.
     
-3)  Now let's make some more files. Use the following command to create the rest of the files you'll need for this exerise: 
+3)  Now let's make some more files. Use the following command to create some more files you'll need for this exerise: 
 
     'touch test{02,03}.txt'
     
