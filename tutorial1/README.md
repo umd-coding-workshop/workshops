@@ -14,18 +14,18 @@ The following commands will be covered in tutorial 1. Use this as a ready-made r
 
         cd
   
-  ls
+        ls
   
-  mkdir
+        mkdir
   
-  man
+        man
   
-  mv
+        mv
   
-  pwd
+        pwd
   
-  rm
+        rm
   
-  touch
+        touch
   
 
