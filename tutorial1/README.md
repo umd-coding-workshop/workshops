@@ -54,16 +54,16 @@ The following commands will be covered in tutorial 1. Use this as a ready-made r
         
         tail    -
   
-        touch   -
+        touch   -       updates access and modification timestamp for file, creates file if it doesn't already exist
         
-        uniq    -
+        uniq    -       prints unique data from a selected file
         
-        vi/vim  -
+        vi/vim  -       launch visual editor program
         
         wc      -       word count
         
         whoami  -       prints user name
         
-        xargs
+        xargs   -       
   
 
