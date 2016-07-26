@@ -16,7 +16,7 @@ The following commands will be covered in tutorial 1. Use this as a ready-made r
         
         cat
         
-        cd
+        cd      -       Change directory
         
         chmod
         
@@ -42,11 +42,11 @@ The following commands will be covered in tutorial 1. Use this as a ready-made r
   
         man
   
-        mv
+        mv      -       move file, mv <filename>
   
         pwd     -       "print working directory", lists current directory
   
-        rm      -       remove file, rm _filename_
+        rm      -       remove file, rm <filename>
         
         sed
         
