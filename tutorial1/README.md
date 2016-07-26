@@ -36,31 +36,33 @@ The following commands will be covered in tutorial 1. Use this as a ready-made r
         
         less
   
-        ls
+        ls      -       lists files in current directory
   
-        mkdir
+        mkdir   -       creates a new directory, mkdir <new directory name>
   
-        man
+        man     -       prints manual for command, man <command>
   
         mv      -       move file, mv <filename>
   
-        pwd     -       "print working directory", lists current directory
+        pwd     -       print working directory, lists current directory
   
         rm      -       remove file, rm <filename>
         
-        sed
+        sed     -
         
-        sort
+        sort    -
         
-        tail
+        tail    -
   
-        touch
+        touch   -
         
-        uniq
+        uniq    -
         
-        vi/vim
+        vi/vim  -
         
-        wc
+        wc      -       word count
+        
+        whoami  -       prints user name
         
         xargs
   
