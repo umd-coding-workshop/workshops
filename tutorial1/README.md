@@ -46,7 +46,7 @@ The following commands will be covered in tutorial 1. Use this as a ready-made r
   
         pwd     -       "print working directory", lists current directory
   
-        rm      -       remove file, rm <*filename*>
+        rm      -       remove file, rm *filename*
         
         sed
         
