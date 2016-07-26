@@ -50,12 +50,12 @@ Let's unpack this display a little.
     -----------------------------------------------------------------------
     drwxr-xr-x+ 1 jkoivist Domain Users    0 Jul 26 12:31 directory_example
     -rwxrwxrwx  1 jkoivist Domain Users    0 Jul 26 12:28 full_access.txt
-    -rw-rw-rw-  1 jkoivist Domain Users 2511 Jul 26 12:37 no.txt
-    ----------  1 jkoivist Domain Users  294 Jul 26 12:27 yes.txt
+    ----------  1 jkoivist Domain Users 2511 Jul 26 12:37 no.txt
+    -rw-rw-rw-  1 jkoivist Domain Users  294 Jul 26 12:27 yes.txt
 
 Using the -l modifier provides a lot of detail about your files. Let's review the types of information you'll get.
 
-1:  Permissions levels
+1:  Permissions levels: The permissions displayed in this view are shown in the following order: User, group, all other groups. These permissions are then broken out in to three different types: read (r), write (w), execute (x). As you can see, yes.txt gives read and write permissions to all users while no.txt denies all access to all users.
 
 2:  Number of hard links
 
