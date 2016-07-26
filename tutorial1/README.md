@@ -26,7 +26,7 @@ The following commands will be covered in tutorial 1. Use this as a ready-made r
         
         find
         
-        grep
+        grep    -       search for a character string in a particular file, grep <'string'> <filename>
         
         head
         
