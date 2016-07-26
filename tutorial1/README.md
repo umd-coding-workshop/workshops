@@ -44,9 +44,9 @@ The following commands will be covered in tutorial 1. Use this as a ready-made r
   
         mv
   
-        pwd
+        pwd     -       "print working directory", lists current directory
   
-        rm
+        rm      -       remove file, rm /filename/
         
         sed
         
