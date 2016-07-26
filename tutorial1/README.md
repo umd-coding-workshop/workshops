@@ -12,7 +12,29 @@ In tutorial 1, you will cover the following topics:
 
 The following commands will be covered in tutorial 1. Use this as a ready-made reference for code descriptions
 
+        awk
+        
+        cat
+        
         cd
+        
+        chmod
+        
+        chown
+        
+        cut
+        
+        find
+        
+        grep
+        
+        head
+        
+        hostname
+        
+        id
+        
+        less
   
         ls
   
@@ -25,7 +47,21 @@ The following commands will be covered in tutorial 1. Use this as a ready-made r
         pwd
   
         rm
+        
+        sed
+        
+        sort
+        
+        tail
   
         touch
+        
+        uniq
+        
+        vi/vim
+        
+        wc
+        
+        xargs
   
 
