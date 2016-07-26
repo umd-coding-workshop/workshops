@@ -12,29 +12,29 @@ In tutorial 1, you will cover the following topics:
 
 The following commands will be covered in tutorial 1. Use this as a ready-made reference for code descriptions
 
-        awk     -
+        awk     -       program that searches for text based on input variables and prints output to file
         
-        cat     -
+        cat     -       display file contents
         
         cd      -       Change directory
         
-        chmod   -
+        chmod   -       change permissions for files or directories
         
-        chown   -
+        chown   -       change owner or owning group of files
         
-        cut     -
+        cut     -       removes line segments from file or files
         
-        find    -
+        find    -       search for files by filename
         
         grep    -       search for a character string in a particular file, grep <'string'> <filename>
         
-        head    -
+        head    -       prints first ten lines of a selected file
         
-        hostname        
+        hostname-       prints system hostname   
         
-        id      -
+        id      -       prints user and group IDs
         
-        less    -
+        less    -       prints file contents, has many powerful options to modify display
   
         ls      -       lists files in current directory
   
@@ -48,11 +48,11 @@ The following commands will be covered in tutorial 1. Use this as a ready-made r
   
         rm      -       remove file, rm <filename>
         
-        sed     -
+        sed     -       stream editor, used to automatically edit or update identified character strings
         
-        sort    -
+        sort    -       prints sorted file contents
         
-        tail    -
+        tail    -       prints last ten lines of a selected file
   
         touch   -       updates access and modification timestamp for file, creates file if it doesn't already exist
         
@@ -64,6 +64,6 @@ The following commands will be covered in tutorial 1. Use this as a ready-made r
         
         whoami  -       prints user name
         
-        xargs   -       
+        xargs   -       uses standard output of a command as the parameter for another command
   
 
