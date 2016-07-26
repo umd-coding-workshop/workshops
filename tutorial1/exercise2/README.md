@@ -46,12 +46,28 @@ Whoops! Looks like you are blocked from reading this file. Let's learn a little 
     
 Let's unpack this display a little.
 
+    1-----------2-3--------4------------5----6------------7----------------
+    -----------------------------------------------------------------------
     drwxr-xr-x+ 1 jkoivist Domain Users    0 Jul 26 12:31 directory_example
     -rwxrwxrwx  1 jkoivist Domain Users    0 Jul 26 12:28 full_access.txt
     -rw-rw-rw-  1 jkoivist Domain Users 2511 Jul 26 12:37 no.txt
-    -rw-rw-rw-  1 jkoivist Domain Users  294 Jul 26 12:27 yes.txt
+    ----------  1 jkoivist Domain Users  294 Jul 26 12:27 yes.txt
 
+Using the -l modifier provides a lot of detail about your files. Let's review the types of information you'll get.
 
+1:  Permissions levels
+
+2:  Number of hard links
+
+3:  Owner
+
+4:  Group
+
+5:  File size
+
+6:  Last-modified date
+
+7:  Filename
 
 
 
