@@ -38,7 +38,18 @@ As you can see, you have access to the contents of this file.
 
     cat no.txt
     
-Whoops! Looks like you are blocked from reading this file. Let's learn a little bit about user permissions
+Whoops! Looks like you are blocked from reading this file. Let's learn a little bit about user permissions.
+
+8) First let's list out all of the files in the current directory, but let's use the -l modifier. This displays additional information abou the files.
+
+    ls -l
+    
+Let's unpack this display a little.
+
+    drwxr-xr-x+ 1 jkoivist Domain Users    0 Jul 26 12:31 directory_example
+    -rwxrwxrwx  1 jkoivist Domain Users    0 Jul 26 12:28 full_access.txt
+    -rw-rw-rw-  1 jkoivist Domain Users 2511 Jul 26 12:37 no.txt
+    -rw-rw-rw-  1 jkoivist Domain Users  294 Jul 26 12:27 yes.txt
 
 
 
