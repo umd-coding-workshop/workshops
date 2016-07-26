@@ -12,29 +12,29 @@ In tutorial 1, you will cover the following topics:
 
 The following commands will be covered in tutorial 1. Use this as a ready-made reference for code descriptions
 
-        awk
+        awk     -
         
-        cat
+        cat     -
         
         cd      -       Change directory
         
-        chmod
+        chmod   -
         
-        chown
+        chown   -
         
-        cut
+        cut     -
         
-        find
+        find    -
         
         grep    -       search for a character string in a particular file, grep <'string'> <filename>
         
-        head
+        head    -
         
-        hostname
+        hostname        
         
-        id
+        id      -
         
-        less
+        less    -
   
         ls      -       lists files in current directory
   
