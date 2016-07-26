@@ -46,7 +46,7 @@ Whoops! Looks like you are blocked from reading this file. Let's learn a little 
     
 Let's unpack this display a little.
 
-    1-----------2-3--------4------------5----6------------7----------------
+    i----------ii-iii------iv-----------v----vi-----------vii----------------
     -----------------------------------------------------------------------
     drwxr-xr-x+ 1 jkoivist Domain Users    0 Jul 26 12:31 directory_example
     -rwxrwxrwx  1 jkoivist Domain Users    0 Jul 26 12:28 full_access.txt
@@ -55,19 +55,19 @@ Let's unpack this display a little.
 
 Using the -l modifier provides a lot of detail about your files. Let's review the types of information you'll get.
 
-1:  Permissions levels: The permissions displayed in this view are shown in the following order: User, group, all other groups. These permissions are then broken out in to three different types: read (r), write (w), execute (x). As you can see, yes.txt gives read and write permissions to all users while no.txt denies all access to all users.
+i)  Permissions levels: The permissions displayed in this view are shown in the following order: User, group, all other groups. These permissions are then broken out in to three different types: read (r), write (w), execute (x). As you can see, yes.txt gives read and write permissions to all users while no.txt denies all access to all users.
 
-2:  Number of hard links
+ii)  Number of hard links: ???
 
-3:  Owner
+iii)  Owner: This is the owner who has created the file or has been set as its owner
 
-4:  Group
+iv)  Group: The dedicated user group with distinct file permissions
 
-5:  File size
+v)  File size: File size in bytes.
 
-6:  Last-modified date
+vi)  Last-modified date: Date the file was laste updated.
 
-7:  Filename
+vii)  Filename
 
 
 
