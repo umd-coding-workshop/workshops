@@ -12,7 +12,9 @@ You should be in the exercise3 directory.
     
 You have quite a few and some of them look very similar. Wouldn't it be nice if there were a way to sort them out based on certain criteria?
 
-3) 
+3) Let's first try using a wildcard (*).
+
+    ls *xml
 
 
 
