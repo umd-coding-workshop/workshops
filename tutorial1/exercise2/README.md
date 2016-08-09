@@ -4,7 +4,9 @@ Now that we've learned the basics of getting around in a bash shell environment,
 
 1) Let's start by making sure we're in the right directory by using the following command:
 
-    cd /exercise2
+    pwd
+
+You should be in the exercise2 directory.
 
 2) If you ever have any questions about how to properly use a command, use the man command to display the instruction manual for that command:
 
@@ -69,7 +71,7 @@ f)  Last-modified date: Date the file was laste updated.
 
 g)  Filename
 
-So, from this display, you can see that  you have full access for full_access.txt, read/write access to yes.txt, and no permissions for no.txt. Now, let's change the permissions for no.txt so that we can display it's contents.
+9) So, from this display, you can see that  you have full access for full_access.txt, read/write access to yes.txt, and no permissions for no.txt. Now, let's change the permissions for no.txt so that we can display it's contents.
 
     chmod a+rw no.txt
     
@@ -79,7 +81,7 @@ You can also use the following command to achieve the same result
     
 The chmod command allows you to change permissions on files and directories. Use the man command to read the full documentation for chmod.
 
-Additionally, the chown command can be used to change the file owner. It is unlikely that you will need to use this command while working with your own files.
+10) Additionally, the chown command can be used to change the file owner. It is unlikely that you will need to use this command while working with your own files.
     
 
 
