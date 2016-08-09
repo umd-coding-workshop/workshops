@@ -55,9 +55,9 @@ Let's unpack this display a little.
 
 Using the -l modifier provides a lot of detail about your files. Let's review the types of information you'll get.
 
-a)  Permissions levels: The permissions displayed in this view are shown in the following order: User, group, all other groups. These permissions are then broken out in to three different types: read (r), write (w), execute (x). As you can see, yes.txt gives read and write permissions to all users while no.txt denies all access to all users.
+a)  Permissions levels: The permissions displayed in this view are shown in the following order: Owner, group, all other users. These permissions are then broken out in to three different types: read (r), write (w), execute (x). As you can see, yes.txt gives read and write permissions to all users while no.txt denies all access to all users.
 
-b)  Number of hard links: ???
+b)  Number of hard links
 
 c)  Owner: This is the owner who has created the file or has been set as its owner
 
@@ -69,7 +69,7 @@ f)  Last-modified date: Date the file was laste updated.
 
 g)  Filename
 
-
+So, from this display, you can see that while you have access to yes.txt, all permissions have been blocked for no.txt.
 
 man
 ls -la
