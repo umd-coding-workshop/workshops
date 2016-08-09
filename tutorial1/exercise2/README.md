@@ -46,12 +46,12 @@ Whoops! Looks like you are blocked from reading this file. Let's learn a little 
     
 Let's unpack this display a little.
 
-    a-----------b-c--------d------------e----f------------g----------------
+    a-----------b-c------d------------e----f------------g----------------
     -----------------------------------------------------------------------
-    drwxr-xr-x+ 1 jkoivist Domain Users    0 Jul 26 12:31 directory_example
-    -rwxrwxrwx  1 jkoivist Domain Users    0 Jul 26 12:28 full_access.txt
-    ----------  1 jkoivist Domain Users 2511 Jul 26 12:37 no.txt
-    -rw-rw-rw-  1 jkoivist Domain Users  294 Jul 26 12:27 yes.txt
+    drwxr-xr-x+ 1 ubuntu Domain Users    0 Jul 26 12:31 directory_example
+    -rwxrwxrwx  1 ubuntu Domain Users    0 Jul 26 12:28 full_access.txt
+    ----------  1 ubuntu Domain Users 2511 Jul 26 12:37 no.txt
+    -rw-rw-rw-  1 ubuntu Domain Users  294 Jul 26 12:27 yes.txt
 
 Using the -l modifier provides a lot of detail about your files. Let's review the types of information you'll get.
 
@@ -69,19 +69,17 @@ f)  Last-modified date: Date the file was laste updated.
 
 g)  Filename
 
-So, from this display, you can see that while you have access to yes.txt, all permissions have been blocked for no.txt.
+So, from this display, you can see that  you have full access for full_access.txt, read/write access to yes.txt, and no permissions for no.txt. Now, let's change the permissions for no.txt so that we can display it's contents.
 
-man
-ls -la
-pwd
+    chmod a+rw no.txt
+    
+You can also use the following command to achieve the same result
 
-whoami
-hostname?
-id -p
+    chmod 666 no.txt
+    
+The chmod command allows you to change permissions on files and directories. Use the man command to read the full documentation for chmod.
 
-chown
-chmod
+Additionally, the chown command can be used to change the file owner. It is unlikely that you will need to use this command while working with your own files.
+    
 
-make two users, prepopulate directory with files of varying ownership/permissions (but in the same group), 
-to illustrate the implications of permissions
 
