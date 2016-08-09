@@ -6,6 +6,14 @@ We've gotten a lot more familiar with moving around in a BASH shell environment.
     
 You should be in the exercise3 directory.
 
+2) Let's look at the files we have in the directory.
+
+    ls -l
+    
+You have quite a few and some of them look very similar. Wouldn't it be nice if there were a way to sort them out based on certain criteria?
+
+3) 
+
 
 
 globbing (and other special shell-isms like ., .., and ~)
