@@ -1,0 +1,26 @@
+Yes, you have access to read this file. Congratulations!
+
+Here's a balloon!
+
+     	 000000
+	0      0
+       0        0
+      0		 0
+      0		 0
+      0		 0
+       0        0
+        0      0
+	 0    0
+	  0  0
+	    0
+	    //
+	   //
+	  //
+	  \\
+	   \\
+	    \\
+	     \\
+	     //
+	    //
+	   //
+	  //
