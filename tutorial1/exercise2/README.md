@@ -8,6 +8,12 @@ Now that we've learned the basics of getting around in a bash shell environment,
 
 You should be in the exercise2 directory.
 
+1.1) Just a piece of housekeeping: before you being the rest of the steps, perform the following command:
+
+    chmod 000 no.txt
+    
+You'll understand why later.
+
 2) If you ever have any questions about how to properly use a command, use the man command to display the instruction manual for that command:
 
     man ls
