@@ -87,7 +87,11 @@ You can also use the following command to achieve the same result
     
 The chmod command allows you to change permissions on files and directories. Use the man command to read the full documentation for chmod.
 
-10) Additionally, the chown command can be used to change the file owner. It is unlikely that you will need to use this command while working with your own files.
+10) Now you should be able to view the contenst of no.txt:
+
+    cat no.txt 
+
+11) Additionally, the chown command can be used to change the file owner. It is unlikely that you will need to use this command while working with your own files.
     
 
 
