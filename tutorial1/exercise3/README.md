@@ -47,8 +47,42 @@ Notice anything different?
 One more...
 
     ls [0-9]*
+    
+7) By now, you can see that using wildcards to extend file pathnames (i.e. globbing) is a quick way of exapnding your searching powers beyond known-file searching. There are a few other 'shell-isms' that will be useful when constructing search terms and file paths.
 
+Before starting these steps, let's move into a sub-directory
 
+    cd sub1
+
+Let's try one of the most common directory shortcuts
+
+    ls ../*.*
+
+The '..' indicates that a command should be executed in the parent directory of the current directory. This should be familiar already because it is used to navigate to a parent directory using the 'cd ..' command.
+
+A similar command is the single dot (.) command. 
+
+    ls ./*.*
+    
+The single dot indicates that a given command should be performed within the current directory. While it may seem that this is redundant, it will become increasingly important as you develop increasingly complex BASH scripts.
+
+Last but not least, let's try the tilde (~) command.
+
+    ls ~/*.*
+
+The tilde is BASH shorthand for a users home directory.
+
+All three of these directory shortcuts will help you to build better commands in BASH. 
+
+8) One last element that we'll discuss in this exercise is the concept of quoting and escaping. 
+
+Firstly, let's get back up to the exercise3 directory.
+
+    cd ..
+
+Sometimes, you may wish to search on a character that already has a specific meaning in the BASH shell context. For example, let's try...
+
+    ls !
 
 globbing (and other special shell-isms like ., .., and ~)
 quoting/escaping (single vs. double, interactions with globbing)
