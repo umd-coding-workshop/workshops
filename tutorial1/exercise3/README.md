@@ -110,7 +110,12 @@ According to wiki.bash-hackers.org, there is no special interpretation for the f
 -pathname expansions
 
 -process substitution
-    
 
-globbing (and other special shell-isms like ., .., and ~)
-quoting/escaping (single vs. double, interactions with globbing)
+Aside from these specifics, all other BASH functions are performed.
+
+On the other hand, strong quotes ('') interpret nothing. System commands, variables, and such are taken as literal characters. The one instance in which this is an issue is if you include an apostrophe in a string as BASH interprets this as the close of the strong quote. For example:
+
+    echo 'here's my test'
+
+This will not work correctly as the system will the the apostrophe is the close of the strong quote and the quote at the end of the line is the opening of a new quote.
+
