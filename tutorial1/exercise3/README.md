@@ -102,9 +102,13 @@ Let's review a little of what makes these two types of quotes so different.
 According to wiki.bash-hackers.org, there is no special interpretation for the following elements if included within weak quotes (""):
 
 -spaces as word-separators
+
 -single-quotes used to introduce strong-quoting
+
 -characters for pattern matching
+
 -pathname expansions
+
 -process substitution
     
 
