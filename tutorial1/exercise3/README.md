@@ -111,7 +111,7 @@ According to wiki.bash-hackers.org, there is no special interpretation for the f
 
 -process substitution
 
-Aside from these specifics, all other BASH functions are performed.
+Aside from these specifics, all other BASH functions are interpreted and performed.
 
 On the other hand, strong quotes ('') interpret nothing. System commands, variables, and such are taken as literal characters. The one instance in which this is an issue is if you include an apostrophe in a string as BASH interprets this as the close of the strong quote. For example:
 
