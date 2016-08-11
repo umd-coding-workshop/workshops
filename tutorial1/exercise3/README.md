@@ -82,7 +82,31 @@ Firstly, let's get back up to the exercise3 directory.
 
 Sometimes, you may wish to search on a character that already has a specific meaning in the BASH shell context. For example, let's try...
 
-    ls !
+    ls *!*
+
+This will produce strange results because the exclamation mark (!) is a defined command in BASH. However, we can perform a character-level escape that will allow us to tell the system that we are identifying a character and not a command.
+
+    ls *\!*
+
+Now, we will see a list of all the files that have an exclamation mark in their names.The backslash is very useful, but it can become cumbersome as you have to use it for every character you wish to "escape". This becomes a greater challange the more complex your commands become.
+
+Another approach to recognizing unique characters in strings is the use of quotes. There are two types of quotes: weak ("") and strong ('').
+
+A quick example of how the two differ is to try out the following two commands:
+
+    echo "Your shell is: $SHELL"
+    echo 'Your shell is: $SHELL'
+    
+Let's review a little of what makes these two types of quotes so different.
+
+According to wiki.bash-hackers.org, there is no special interpretation for the following elements if included within weak quotes (""):
+
+-spaces as word-separators
+-single-quotes used to introduce strong-quoting
+-characters for pattern matching
+-pathname expansions
+-process substitution
+    
 
 globbing (and other special shell-isms like ., .., and ~)
 quoting/escaping (single vs. double, interactions with globbing)
