@@ -2,7 +2,7 @@
 
 ## File Structure
 
-These materials are designed to be used while at the command prompt in a Bash shell environment.  They are organized into three tutorials, corresponding to three planned workshops, with each tutorial divided into several exercises covering a more or less coherent set of activities relating to some aspect of scripting in Bash.  The tutorials are designed to build on one another, so it is recommended that you proceed in order.
+These materials are designed to be used while at the command prompt in a Bash shell environment.  They are organized into three tutorials, corresponding to three planned workshops, with each tutorial divided into several exercises covering a more or less coherent set of activities relating to some aspect of scripting in Bash.  The tutorials are designed to build on one another, so it is recommended that you proceed in order. For each tutorial and exercise, the README.md file provides the instructions on how to proceed through the individual tasks. The other files in the folder are used in the individual tasks in the exercise.
 
 ## Getting Bash
 
