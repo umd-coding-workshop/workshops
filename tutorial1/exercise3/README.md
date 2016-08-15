@@ -1,4 +1,4 @@
-We've gotten a lot more familiar with moving around in a BASH shell environment. Now, we're going to learn a bit about how BASH allows you to use globbing, quoting, and escaping to more efficiently find resourcesin your system.
+We've gotten a lot more familiar with moving around in a BASH shell environment. Now, we're going to learn a bit about how BASH allows you to use globbing, quoting, and escaping to more efficiently find resources in your system.
 
 1) First things first, let's make sure we're in the right directory.
 
@@ -22,21 +22,21 @@ Now, try using the wildcard in the middle of a string.
 
     ls a*txt
     
-This returns all the files that have any characters between the identified characters.
+This returns all the files that have names beginning with 'a' and ending with 'txt', with any number of characters (including 0) between the identified characters.
 
 4) How about using the same string but with a different wildcard (?).
 
     ls a?txt
     
-A little different, right? This is because this wildcard (?) represents a single character variable. You can search for multiple variables by using multiple wildcards (?), but it will not expand the search beyond the exact number of characters that you define. Be sure that when you use this wildcard only when you are looking for an exact number of variables.
+A little different, right? This is because this wildcard (?) stands in for a single character only. You can match multiple wildcard character by using multiple '?'s, but it will not expand the search beyond the exact number of characters that you define. Be sure that when you use this wildcard only when you are looking to match a filename of an exact length.
 
-5) The [...] varible allows you to define a range of characters that you wish to be returned. First, let's try...
+5) The [...] construct allows you to indicate a range of characters that you wish to match. First, let's try...
 
     ls [a-d].txt
     
-This defines a range of acceptable variables. In this instance, any file between a.txt and d.txt will be returned.
+This defines a range of matching characters. In this instance, any file with a name between a.txt and d.txt will match.
 
-6) Now, combine these different types of wildcards in order to note how they interact as a group.
+6) Now, combine these different types of wildcards in order to note how they work together.
 
     ls [a-d]*.txt
     
@@ -48,7 +48,7 @@ One more...
 
     ls [0-9]*
     
-7) By now, you can see that using wildcards to extend file pathnames (i.e. globbing) is a quick way of exapnding your searching powers beyond known-file searching. There are a few other 'shell-isms' that will be useful when constructing search terms and file paths.
+7) By now, you can see that using wildcards to match file pathnames (i.e. globbing) is a quick way of exapnding your searching powers beyond known-file searching. There are a few other 'shell-isms' that will be useful when constructing search terms and file paths.
 
 Before starting these steps, let's move into a sub-directory
 
@@ -70,7 +70,7 @@ Last but not least, let's try the tilde (~) command.
 
     ls ~/*.*
 
-The tilde is BASH shorthand for a users home directory.
+The tilde is BASH shorthand for a user's home directory.
 
 All three of these directory shortcuts will help you to build better commands in BASH. 
 
@@ -117,5 +117,5 @@ On the other hand, strong quotes ('') interpret nothing. System commands, variab
 
     echo 'here's my test'
 
-This will not work correctly as the system will the the apostrophe is the close of the strong quote and the quote at the end of the line is the opening of a new quote.
+This will not work correctly as the system will interpret the apostrophe as the close of the strong quote and the quote at the end of the line is the opening of a new quote.
 
