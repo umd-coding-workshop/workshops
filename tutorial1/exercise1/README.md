@@ -6,6 +6,16 @@ Navigate to the 'exercise1' directory by using the cd command.
     cd exercise1
 
 Use pwd command to make sure you are in the correct directory.
+
+    pwd
+    
+The output shows you the directory where you are located. The cd command is relative to your current directory unless you type the directory with an opening slash, in which case it works relative to the root of your file system.
+
+In addition, you can use '..' to indicate the parent of the current directory, and '.' to indicate the current directory. Thus, 
+
+    cd ..
+    
+Takes you up to the parent of the current directory.
     
 ## 2. Create Files and List Directory Contents (touch, ls)
 Let's make some files! Make your first file by entering the following command:
@@ -15,7 +25,7 @@ Let's make some files! Make your first file by entering the following command:
 Use ls command to see the file you've just created.
     
 ## 3. Brace Expansion ({,})
-Now let's make some more files. Use the following command to create some more files you'll need for this exerise: 
+Now let's make some more files. Use the following command to create some more files you'll need for this exercise: 
 
     touch test{02,03}.txt
     
