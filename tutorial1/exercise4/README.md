@@ -45,7 +45,7 @@ But what if you don't want to walk through the whole file, but just want to see 
 
     head -n5 poe.txt
 
-You should have seen the poem's title, author, and opening lines.  As a review of a previous lesson's materials, why not take the oppotunity to give this file a more descriptive name?:
+You should have seen the poem's title, author, and opening lines.  As a review of a previous lesson's materials, why not take the opportunity to give this file a more descriptive name?:
 
     mv poe.txt raven.txt
 
