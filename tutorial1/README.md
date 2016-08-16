@@ -4,10 +4,10 @@ In this first tutorial, we will go over the basics of navigating the bash file s
 
 The lesson has been divided into the following topics:
 
-        1. [Exercise 1: Basic file navigation and creation](exercise1)
-        2. [Exercise 2: System information and permissions](exercise2)
-        3. [Exercise 3: Wild cards, globbing, quoting, and escaping](exercise3)
-        4. [Exercise 4: Creating file content and access methods](exercise4)
+1. [Exercise 1: Basic file navigation and creation](exercise1)
+2. [Exercise 2: System information and permissions](exercise2)
+3. [Exercise 3: Wild cards, globbing, quoting, and escaping](exercise3)
+4. [Exercise 4: Creating file content and access methods](exercise4)
 
 The following commands will be covered in tutorial 1. Use this list as a ready-made reference for code descriptions
 
