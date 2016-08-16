@@ -2,7 +2,7 @@
 
 The first three exercises in this tutorial have focused on navigating the shell environment and manipulating directories and files as objects within that environment. Now it is time to explore some of the tools for working directly with the contents of files.
 
-## 1) Slicing and joining files (split and cat)
+## 1. Slicing and joining files (split and cat)
 
 cat is short for concatenate, and as the name suggests, its original intent was to allow you an easy way of joining two files.  To demonstrate, we will experiment with another commnand, with some opposite effects, namely split.  If you are not already, go into the exercise4 directory and list the files
 
@@ -31,7 +31,7 @@ As you can probably imagine, there are many other ways to look at files.  Cat is
 
     cat hamlet1-5.txt
   
-## 2) Showing contents of files (more and less)
+## 2. Showing contents of files (more and less)
 
 Did you catch all of that?  The whole scene from Hamlet went past in a fraction of a second.  Isn't there a more convenient utility for reading.  Of course there is.
 
@@ -39,7 +39,7 @@ Did you catch all of that?  The whole scene from Hamlet went past in a fraction 
 
 The 'more' command paginates your file for easy reading, and let's you page through by hitting space (hit single arrow keys to move up and down, or q to break out).  Another similar command is 'less' which (so the story goes) was named as a pun on 'more' (i.e. less is more).  You can explore less and more with their respective manual pages (man less, man more).
 
-## 3) Displaying parts of files (head and tail)
+## 3. Displaying parts of files (head and tail)
 
 But what if you don't want to walk through the whole file, but just want to see the beginning of it, to get an idea of what's it contains?  For that you can use 'head'. For example, let's say you've got a file called 'poe' and you just want to know which work of the 'divine Edgar' it contains:
 
@@ -55,7 +55,7 @@ As you might have already guessed by now, if we have a 'head' command there's al
   
 As you can see, here we've left out the '-n' argument that can be used to specify how much of the file to display.  Rather than produce an error, the tail command simply defaults to a set number of lines (which happens to be 10).
 
-## 4) Counting parts of files (wc and wc -l, and pipes)
+## 4. Counting parts of files (wc and wc -l, and pipes)
 
 What if we needed to know how long a file is, in order to estimate how many lines to see with our head or tail commands?  There is an easy way to do that with the wc command.  
 
@@ -65,13 +65,13 @@ Hmmm.  What are those three numbers?  None of them looks like a line count for t
 
     wc -l raven.txt
   
-Neat, huh?  There's a very useful pattern that can serve here as a good demo of wc and a preview of something really nifty that will be covered in a more advanced workshop, namely the ability to connect multiple commands into what are called 'pipelines'.  A very common pipeline is to attach the "wc -l" command to the end of any sort of process as a way of measuring the number of results.  For example, if we wanted to know how many lines were coming back from the tail command we did earlier:
+Neat, huh?  There's a very useful pattern that can serve here as a good demo of wc and a preview of something really nifty that will be covered in a more advanced workshop, namely the ability to connect multiple commands into what are called 'pipelines'.  A very common pipeline is to attach the "wc -l" command to the end of any sort of process that produces line-oriented results, as a way of getting a result count.  For example, if we wanted to know how many lines were coming back from the tail command we did earlier (assuming for the moment that we didn't know tail defaults to 10 lines):
 
     tail raven.txt | wc -l
   
 As you can see, we've simply run the tail without parameters and then attached a vertical pipe character (remember we are building a pipeline) followed by the wc -l command.  Now the wc -l doesn't apply to the whole raven.txt file in this case, but only to the portion that came through the pipeline from the tail command (in this case 10 lines).
 
-## 5) Finding and filtering (grep)
+## 5. Finding and filtering (grep)
 
 So we've seen how to look at files and measure them in certain ways but what if we need to filter them or find things really large files?  For that there are several powerful tools at our disposal, and we'll use this idea of pipelines to demonstrate one of them, the gnu regular expression processor, or grep.
 
@@ -83,23 +83,23 @@ But that's gives you too much information.  Instead you can combine the same com
 
     cat hamlet2-2.txt | grep Rosencrantz
   
-That's pretty good, but what exactly is this output?  Cat has sent the entire contents of act 2, scene 2 to the standard output, which is normally the screen.  But the pipe redirects that output instead to the next commnad in the pipeline, namely grep.  Grep then takes the incoming lines and searches them for the specified search string, "Rosencratz".  It filters out lines that do not contain that string, and prints only those that do.
+That seems pretty good, but what exactly is this output?  Cat has sent the entire contents of act 2, scene 2 to the standard output, which is normally the screen.  But the pipe redirects that output instead to the next command in the pipeline, namely grep.  Grep then takes the incoming lines and searches them for the specified search string, "Rosencrantz".  It filters out lines that do not contain that string (i.e. lines that don't match the specified 'expression' or 'pattern'), and prints only those that match.
 
-As you can see most, but not all of these matches are Rosenctrantz's lines, thanks to the cues in the original text.  We can try to filter out Hamlet's line that happened to contain your character's name "Rosencrantz! Good lads, how do ye both?" by doing the following:
+As you can see most, but not all, of these matches are Rosenctrantz's lines, thanks to the speaker cues in the original text.  We can try to filter the one line of Hamlet's that happened to match our pattern -- "Rosencrantz! Good lads, how do ye both?" -- with the following pipeline by specifying that grep should match only the name followed by a period:
 
     cat hamlet2-2.txt | grep Rosencrantz.
   
-Hmm. That didn't work. Why did grep still match on the "Rosencrantz!" opening?  The answer is that '.' has a special meaning in the grep syntax, namely matching any character.  So it matched both the period and the exclamation point (and spaces for that matter).  How can we indicate an actual period?  The answer is by excaping:
+Hmm. That didn't work. Why did the line beginning with "Rosencrantz!" still match our pattern?  The answer is that '.' has a special meaning in the grep syntax, namely matching any character.  So the dot special character in our regular expression actually matches both a period and an exclamation point (and spaces or any other character for that matter).  So how can we indicate that we want to match only an actual period?  The answer is by using escaping:
 
     cat hamlet2-2.txt | grep Rosencrantz\\.
   
-What if you wanted to sort those lines in order to create an index to the speeches of your character. For that you would just add one more segment to your pipeline:
+The double backslash tells grep to treat the period literally, so now it only matches the lines beginning with Rosencrantz's speaker cue. Now what if you wanted to sort all those lines, perhaps in order to create an index to the speeches of your character? For that you would just add one more segment to your pipeline:
 
     cat hamlet2-2.txt | grep Rosencrantz\\. | sort
   
-Now we're getting back only Rosencrantz's lines, sorted alphabetically.  But it is not all of this character's dialogue, but rather only the first line of each speech. There are ways to construct grep expressions that will retrieve all lines (through the trailing blank line that mark a change in speaker), but that is a sufficently complicated task that is better left aside for now.  Suffice it to say that we've only barely scratched the surface of the utility of grep.
+Now we're getting back only Rosencrantz's lines, sorted alphabetically.  It is not all of this character's dialogue, but rather only the first line of each speech. There are ways to construct grep expressions that will retrieve all lines (by utilizing the trailing blank line that marks a change in speaker), but that is a sufficently complicated task that is better left aside for now.  Suffice it to say that we've only barely scratched the surface of the many things you can do with grep.
 
-###6) File Editors 
+## 6. File Editors 
 
 The final topic for this exercise is to introduce two of the possible editor programs that you might choose to use to edit files in the terminal. The first one will be familar to anyone who ever used a command-line emial interface such as Pine. 
 
@@ -113,7 +113,7 @@ The other editor, while more difficult to learn initially, is a favorite among m
 
 There have been entire books written on learning vi (short for VIsual editor), so a full introduction is most certainly beyond the scope of this tutorial.  Perhps the key thing to note for those who are new to vi is simply that this editor has two modes, command mode and insert mode.  You switch betweeen them by pushing i to go into insert mode, and escape to go back out.  Explore vi and read more in this tutorial from the University of Washington: http://staff.washington.edu/rells/R110/
 
-###7) Conclusion 
+## 7. Conclusion 
 
 That's it!  You made it to the end of this first tutorial on the Bash command line.  The key now, to avoid forgetting what you have learned, is to put these skills to use, preferably on a real-world project. 
 
