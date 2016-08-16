@@ -16,6 +16,6 @@ For this workshop, to get around the issues with the environment, we are using t
 
 Once you have a working Bash environment (either in the Cloud or on your local machine), you'll need to clone this repository to have the files available for the exercises. Navigate through your shell environment to a location where you would like to store the files and type the following command to clone this repository.
 
-  git clone https://github.com/umd-coding-workshop/workshops
+    git clone https://github.com/umd-coding-workshop/workshops
 
 This command assumes you have git installed in your environment and that you are able to move to an appropriate directory in your command line interface. If that's not the case, please contact one of the members of the Libraries' Coding Workshop and we'll help you get started.
