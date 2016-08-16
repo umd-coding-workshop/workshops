@@ -1,4 +1,4 @@
-# Exercise 1: Basic System Navigation and File Creation/Removal
+# Exercise 1: Basic System and File Navigation
 
 ## 1. Orienting Yourself and Navigating (cd, pwd)
 Navigate to the 'exercise1' directory by using the cd command.
