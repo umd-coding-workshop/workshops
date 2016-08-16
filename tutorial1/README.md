@@ -11,7 +11,7 @@ The lesson has been divided into the following topics:
 
 The following commands will be covered in tutorial 1. Use this list as a ready-made reference for code descriptions
 
-        awk         search input stream (by default line-by-line), filters and modifies the input, and prints to stdout
+        awk         search input stream (default line-by-line), then filter, modify, and send to stdout
         cat         join files together, also used to display file contents
         cd          change current working directory
         chmod       change permissions for files or directories
