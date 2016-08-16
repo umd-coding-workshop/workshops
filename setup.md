@@ -10,4 +10,12 @@ For Mac and Linux users, a Bash environment is available simply by opening the t
 
 ## Cloud 9
 
-For this workshop, to get around the issues with the environment, we are using the Cloud 9 cloud programming environment instead.  We'll walk through getting set up on Cloud 9 at the beginning of the workshop.
+For this workshop, to get around the issues with the environment, we are using the Cloud 9 cloud programming environment instead.  We'll walk through getting set up on Cloud 9 at the beginning of the workshop.  To create a free Cloud 9 account you will need to supply a credit card number for identity verification, so if you are on Windows and choose not to give Cloud 9 your credit card info, Cygwin is probably your best option.
+
+## Cloning this Repository
+
+Once you have a working Bash environment (either in the Cloud or on your local machine), you'll need to clone this repository to have the files available for the exercises. Navigate through your shell environment to a location where you would like to store the files and type the following command to clone this repository.
+
+  git clone https://github.com/umd-coding-workshop/workshops
+
+This command assumes you have git installed in your environment and that you are able to move to an appropriate directory in your command line interface. If that's not the case, please contact one of the members of the Libraries' Coding Workshop and we'll help you get started.
