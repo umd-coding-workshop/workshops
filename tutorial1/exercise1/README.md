@@ -1,4 +1,4 @@
-# Exercise 1: Basic file navigation and creation
+# Exercise 1: Basic System Navigation and File Creation/Removal
 
 ## 1. Orienting Yourself and Navigating (cd, pwd)
 Navigate to the 'exercise1' directory by using the cd command.
@@ -14,12 +14,12 @@ Let's make some files! Make your first file by entering the following command:
 
 Use ls command to see the file you've just created.
     
-## 3. Brace Expansion { , }
+## 3. Brace Expansion ({,})
 Now let's make some more files. Use the following command to create some more files you'll need for this exerise: 
 
     touch test{02,03}.txt
     
-## 4. Brace Expansion with Ranges { .. }
+## 4. Brace Expansion with Ranges ({..})
 You can also specify a range of numbers (or letters) with the '..' syntax:
     
     touch test{04..10}.txt
