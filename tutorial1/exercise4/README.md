@@ -33,27 +33,27 @@ As you can probably imagine, there are many other ways to look at files.  Cat is
   
 ## 2. Showing contents of files (more and less)
 
-Did you catch all of that?  The whole scene from Hamlet went past in a fraction of a second.  Isn't there a more convenient utility for reading.  Of course there is.
+Did you catch all of that?  The whole scene from Hamlet went past in a fraction of a second.  Isn't there a more convenient utility for reading files?  Of course there is!
 
     more hamlet1-5.txt
 
-The 'more' command paginates your file for easy reading, and let's you page through by hitting space (hit single arrow keys to move up and down, or q to break out).  Another similar command is 'less' which (so the story goes) was named as a pun on 'more' (i.e. less is more).  You can explore less and more with their respective manual pages (man less, man more).
+The 'more' command paginates your file for easy reading, and lets you page through by hitting space (hit single arrow keys to move up and down, or q to break out).  Another similar command is 'less', which (so the story goes) was named as a pun on 'more' (i.e. less is more).  You can explore less and more with their respective manual pages (man less, man more).
 
 ## 3. Displaying parts of files (head and tail)
 
-But what if you don't want to walk through the whole file, but just want to see the beginning of it, to get an idea of what's it contains?  For that you can use 'head'. For example, let's say you've got a file called 'poe' and you just want to know which work of the 'divine Edgar' it contains:
+But what if you don't want to walk through the whole file, but just want to see the beginning of it, to get an idea of what's it contains?  For that you can use 'head'. For example, let's say you've got a file called 'poe' and you want to know just which work of the 'divine Edgar' it contains. For that you don't need to see the whole file, but probably just the first few lines:
 
     head -n5 poe.txt
 
-You should have seen the poem's title, author, and opening lines.  As a review of a previous lesson's materials, why not take the oppotunity to give this file a more descriptive name:
+You should have seen the poem's title, author, and opening lines.  As a review of a previous lesson's materials, why not take the oppotunity to give this file a more descriptive name?:
 
     mv poe.txt raven.txt
 
-As you might have already guessed by now, if we have a 'head' command there's also likely going to be a 'tail' command to see the end of the file (I guess maybe for those Agatha Christie fans who can't wait to find out who done it.
+As you might have already guessed by now, if we have a 'head' command there's also likely going to be a 'tail' command to see the end of the file. Tail is particularly useful for monitoring the updates to log files in realtime, but could also be useful for those Agatha Christie fans who can't wait to find out who done it.
 
     tail raven.txt
   
-As you can see, here we've left out the '-n' argument that can be used to specify how much of the file to display.  Rather than produce an error, the tail command simply defaults to a set number of lines (which happens to be 10).
+As you can see, here we've left out the '-n' argument that we used with head to specify how many lines to display.  Rather than produce an error, the tail command simply defaults to a set number of lines (which happens to be 10).
 
 ## 4. Counting parts of files (wc and wc -l, and pipes)
 
