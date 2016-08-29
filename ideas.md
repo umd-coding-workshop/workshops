@@ -60,12 +60,13 @@ Ideas for the curriculum, exercises, etc. can be added in this document.
 
 ### Running commands
 
-- pipes
-- IO redirection
 - stdin stdout stderr
-- variables
+- IO redirection
+- running multiple commands (;)
 - "short-circuit" operators (`&&` and `||`)
+- pipes
 - for/while loops
+- variables
 - command substitution
 
 ### Scripting
