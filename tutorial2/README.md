@@ -75,7 +75,7 @@ pwd >status.txt; date >>status.txt
 
 ## "Short-circuit" Operators (`&&` and `||`)
 
-If you have a sequence of commands that you only want to run if a previous command succeeded (or failed), you place the **"short-circuit" operators** between the commands.
+If you have a command that you only want to run if a previous command succeeded (or failed), you place the **"short-circuit" operators** between the commands.
 
 ### Short-circuit "and": `&&`
 
@@ -102,7 +102,7 @@ wc -l <listing.txt
 
 However, now you have the `listing.txt` file hanging around. For quick questions like "How many files are in this directory?" you don't really want to bother with temporary files like this.
 
-Unix handles this extremely common case with pipes. A pipe connects one command's STDOUT to another command's STDIN. Therefore, we can actually count files in a directory like this:
+Unix handles this extremely common case with a constructy called a **pipe**. A pipe connects one command's STDOUT to another command's STDIN. Therefore, we can actually count files in a directory like this:
 
 ```
 ls | wc -l
@@ -145,3 +145,13 @@ The command substitution is indicated by the `$(`...`)` construct. Bash runs the
 ## `while` Loops
 
 Sometimes, instead having a list of files or other fixed number of times you would like to repeat a series of commands, you want to repeat a command until some condition is met. To do this, you use a **while loop**.
+
+A common use for a while loop is to read a file line by line and do something to each line one at a time. For example, to read a text file and prepend an email comment marker to the beginning of each line, we can use the `read` command in a while loop. Since `read` reads from STDIN by default (like a good Unix citizen), we will add input redirection to tell it to read from a file instead.
+
+```
+while read line; do echo "> $line"; done <message.txt
+```
+
+The argument to `read` is the name of the variable we want to use to store the value that it reads.
+
+Note that the input redirection to read from the *message.txt* file comes at the end of the loop construct. This is because the file is the input to the entire loop. If instead we made the file the input to the `read` command, then the loop would repeat forever, just reading the first line of the file.
