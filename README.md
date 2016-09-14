@@ -9,4 +9,4 @@ The execises have been organized into three tutorials:
 3. [Creating scripts](tutorial3)
 
 ## Fall 2016 Workshop Series
-In the first meeting in the Fall 2016 workshop series, we worked through the first part of tutorial #1 above.  In the second meeting (Sept. 19), our goal is to complete what remains of tutorial 1 ("Get to Know the File System").  In the third meeting (Sept. 26), we hope to move on to tutorial #2 above ("Running Commands").
+In the first meeting in the Fall 2016 workshop series, we worked through the first part of tutorial #1 above ("Get to Know the File System").  In the second meeting (Sept. 19), our goal is to complete what remains of that first tutorial.  In the third meeting (Sept. 26), we hope to move on to tutorial #2 above ("Running Commands").
