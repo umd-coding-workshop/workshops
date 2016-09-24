@@ -17,13 +17,13 @@ Sometimes, instead of reading from the keyboard or sending output to the screen,
 To tell a command to read from a file instead of from the keyboard, enter a `<` followed by the filename:
 
 ```
-wc <sample.txt
+wc <README.md
 ```
 
 The redirection operator can go before the command, too:
 
 ```
-<sample.txt wc
+<README.md wc
 ```
 
 ### Output Redirection
@@ -59,9 +59,25 @@ STDERR is used for warnings, errors, diagnostic messages, and any other output t
 
 You can also redirect STDERR to a file, and it can be a separate file from where you redirect STDOUT. The redirection operator for STDERR is `2>`.
 
+First try to view a non-existant file:
+
 ```
-command >output.txt 2>errors.txt
+cat nothere.txt
 ```
+
+You will see an error message complaining about the fact that `nothere.txt` does not exist. Now try the same command, but redirect STDERR:
+
+```
+cat nothere.txt 2>errors.txt
+```
+
+Now there is nothing sent to the screen, and the `errors.txt` file will contain the error message instead:
+
+```
+cat errors.txt
+```
+
+<!-- sidebar on what the `2` means: file descriptor number -->
 
 ## Running Multiple Commands (;)
 
@@ -81,13 +97,24 @@ If you have a command that you only want to run if a previous command succeeded 
 
 If you only want to run the second command if the first command succeeds, use the "and" operator: `&&`.
 
-[TODO: example]
+For example, suppose you have a large file or set of files you want to copy and then do some processing. But you only want to start processing the files if you are sure that the copy
+command succeeded. This is a perfect opportunity to use the short-circuit and operator:
+
+```
+cp badfile.txt newfile.txt && wc <newfile.txt
+```
+
+Note in this example we are using a file we know doesn't exist (`badfile.txt`) to simulate a copy operation that fails, and our old friend `wc` is standing in for our processing operation.
 
 ### Short-circuit "or": `||`
 
 If you have a sequence of alternative commands and only want to try running them until you get to one that works, use the "or" operator: `||`.
 
-This is a much less common occurance than the `&&`.
+This is a much less common occurance than the `&&`, but it still comes up.
+
+```
+wc <badfile.txt >count.txt || echo "Failed!"
+```
 
 ## Pipes
 
@@ -122,15 +149,21 @@ ls | grep 'txt' | wc -l >count.txt
 <listing.txt grep 'txt' | wc -l >count.txt
 ```
 
+### Fun with Pipes: `cowsay`
+
+[TODO: cowsay diversion]
+
 ## `for` Loops and Variables
 
 Sometimes you want to repeat a command. Often, you will have a command, or commonly a series of commands, that you want to run on lots of files. The way to do this is with a **for loop**. This will also introduce us to the concept of **variables**
 
 ```
-for f in a.txt b.txt c.txt; do wc -l <"$f"; done
+for f in README.md listing.txt status.txt; do wc -l <"$f"; done
 ```
 
-This runs the command `wc -l` three times, and each time replaces the `$f` with the next name from the list `a.txt`, `b.txt`, `c.txt`. The `$f` is a **variable**. When you define a variable in Bash, you omit the leading `$`, but everywhere you use it you must include the `$`.
+This runs the command `wc -l` three times, and each time replaces the `$f` with the next name from the list `README.md`, `listing.txt`, `status.txt`. The `$f` is a **variable**. When you define a variable in Bash, you omit the leading `$`, but everywhere you use it you must include the `$`.
+
+Variable names are really for your benefit; the shell does not care. If you just running quick, one-off commands at the command line, single letter variables that are easy to type are fine. However, once you get into writing scripts, you will find that using longer, more expressive variable names will help you understand your code.
 
 ## Command Substitution
 
@@ -146,12 +179,12 @@ The command substitution is indicated by the `$(`...`)` construct. Bash runs the
 
 Sometimes, instead having a list of files or other fixed number of times you would like to repeat a series of commands, you want to repeat a command until some condition is met. To do this, you use a **while loop**.
 
-A common use for a while loop is to read a file line by line and do something to each line one at a time. For example, to read a text file and prepend an email comment marker to the beginning of each line, we can use the `read` command in a while loop. Since `read` reads from STDIN by default (like a good Unix citizen), we will add input redirection to tell it to read from a file instead.
+A common use for a while loop is to read a file line by line and do something to each line one at a time. For example, to read a text file and prepend something to the beginning of each line, we can use the `read` command in a while loop. Since `read` reads from STDIN by default (like a good Unix citizen), we will add input redirection to tell it to read from a file instead.
 
 ```
-while read line; do echo "> $line"; done <message.txt
+while read line; do echo "=== $line"; done <README.md
 ```
 
-The argument to `read` is the name of the variable we want to use to store the value that it reads.
+The argument to `read` is the name of the variable we want to use to store the value that it reads. In this case we are using `line`.
 
-Note that the input redirection to read from the *message.txt* file comes at the end of the loop construct. This is because the file is the input to the entire loop. If instead we made the file the input to the `read` command, then the loop would repeat forever, just reading the first line of the file.
+Note that the input redirection to read from the *README.md* file comes at the end of the loop construct. This is because the file is the input to the entire loop. If instead we made the file the input to the `read` command, then the loop would repeat forever, just reading the first line of the file.
