@@ -4,6 +4,7 @@
 ### shebang
 ### executable
 ## command-line arguments
+## variables
 ## echo
 ## conditionals
 ### if/then
