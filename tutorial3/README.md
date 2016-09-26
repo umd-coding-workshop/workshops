@@ -1,4 +1,4 @@
-# Tutorial 3: Scripts
+# Writing Scripts
 
 ## creating script files
 ### shebang
