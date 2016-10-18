@@ -10,13 +10,17 @@ The script is a basic loop, that will perform three commands on all the argument
   
 Examples of usage:
 
-Given a directory of files of various types, one could use this to create a list of all the pdf files in the directory by doing 
+Given a directory of files of various types, one could use this to create a list of all the pdf files in the directory by doing:
 
     $ ./fileinfo.sh *.pdf
     
-Given a tree of directories and files, one could use this to create a list of all files by doing
+Given a tree of directories and files, one could use this to create a list of all files by doing:
 
     $ ./fileinfo.sh $(find . -type f)
+    
+Either of the above examples could be written to a file by using the shell's built-in redirection feature:
+
+    $ ./fileinfo.sh *.pdf > output.txt
     
 There are many other ways one might use this script, or extend it to fit particular scenarios.
 
