@@ -1,10 +1,12 @@
-This script is useful for getting information about files. Together with built-in commands such as find and wc, as well as shell globbing, it can be used to generate information and lists of files matching arbitrary criteria, including creatiing md5 checksums that can be used to ensure file integrity.
+# fileinfo.sh
 
-The script is a basic loop, that will perform three commands on all the arguments passed to it:
+This script is useful for getting information about files. Used together with built-in commands such as find and wc, as well as shell globbing, it is able to generate information and lists about sets of files matching arbitrary criteria, including creatiing md5 checksums that can be used to ensure file integrity.
 
-  # it gets the size of the file in bytes
-  # it generates an md5 checksum for the file
-  # it prints the filename, size, and checksum, separated by tabs
+The script is a basic loop, that will perform three commands on all the arguments passed to it (it is up to the user to ensure that only filenames are passed as arguments -- this version does not handle directories gracefully):
+
+  1. it gets the size of the file in bytes
+  2. it generates an md5 checksum for the file
+  3. it prints the filename, size, and checksum, separated by tabs
   
 Examples of usage:
 
